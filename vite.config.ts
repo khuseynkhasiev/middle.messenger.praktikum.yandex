@@ -1,10 +1,16 @@
 import  { defineConfig } from "vite";
+import { resolve } from "path";
 
 export default defineConfig({
     plugins: [],
-    root: './src',
+    // root: './src',
+    // build: {
+    //     sourcemap: false,
+    //     outDir: '../dist'
+    // }
+
+    root: resolve(__dirname, "src"),
     build: {
-        sourcemap: false,
-        outDir: '../dist'
-    }
+        outDir: resolve(__dirname, "dist"),
+    },
 })

@@ -9,6 +9,7 @@ import profileEditPassword from "./pages/profilePasswordEdit/profileEditPassword
 import chats from "./pages/chats/chats.js";
 import notFound from "./pages/notFound/notFound.js";
 import error from "./pages/error/error.js";
+import avatarIcon from './image/avatar-icon.png';
 
 const comp = Handlebars.compile(main);
 const res = comp({})
@@ -30,7 +31,7 @@ document.addEventListener('click', function(event) {
         }
         if (href === '/profile') {
             event.preventDefault(); // Предотвращаем стандартное действие перехода по ссылке
-            const loginContent = profile();
+            const loginContent = profile({avatarIcon});
             document.getElementById('root').innerHTML = loginContent;
         }
         if (href === '/profile-edit') {
