@@ -6,11 +6,13 @@
         width: 100%;
         padding: 0;
         list-style: none;
-        & li:last-child{
+
+        & li:last-child {
             border-bottom: none;
         }
     }
-    &__img{
+
+    &__img {
         object-fit: contain;
         object-position: center center;
         width: 40px;
@@ -22,6 +24,7 @@
         z-index: 1;
         mix-blend-mode: multiply;
     }
+
     &__avatar {
         position: relative;
         width: 130px;
@@ -29,6 +32,7 @@
         border-radius: 50%;
         cursor: pointer;
         overflow: hidden;
+
         &::before {
             content: '';
             position: absolute;
@@ -45,6 +49,7 @@
         &:hover::before {
             background-color: rgba(0, 0, 0, 0.5);
         }
+
         &:hover::after {
             content: 'Поменять аватар';
             position: absolute;
@@ -70,6 +75,7 @@
         border-right: solid 1px #eaeaea;
         position: relative;
         cursor: pointer;
+
         &::before {
             content: "";
             width: 28px;
@@ -81,9 +87,9 @@
             background-image: url("../../image//back-icon.svg");
             background-repeat: no-repeat;
             background-size: contain;
-
         }
     }
+
     &__btn {
         background: none;
         border: none;
@@ -96,10 +102,11 @@
         line-height: 13px; /* 100% */
         cursor: pointer;
     }
+
     &__container {
         display: flex;
-
     }
+
     &__input {
         border: none;
         background: none;
@@ -113,7 +120,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: 13px; /* 100% */
-        &::placeholder{
+        &::placeholder {
             color: #999;
             text-align: right;
             font-family: Inter, sans-serif;
@@ -123,6 +130,7 @@
             line-height: 13px; /* 100% */
         }
     }
+
     &__item {
         width: 100%;
         padding: 10px 0;
@@ -130,6 +138,7 @@
         display: flex;
         justify-content: space-between;
     }
+
     &__label {
         color: #1E1E1E;
         font-family: Inter, sans-serif;
@@ -138,6 +147,7 @@
         font-weight: 500;
         line-height: 13px; /* 100% */
     }
+
     &__link {
         color: #3369F3;
         font-family: Inter, sans-serif;
@@ -148,15 +158,17 @@
         cursor: pointer;
         text-decoration: none;
     }
+
     &__list {
         list-style: none;
         padding: 0;
         width: 100%;
-        & li:last-child{
+
+        & li:last-child {
             border-bottom: none;
         }
-
     }
+
     &__main {
         display: flex;
         flex-direction: column;
@@ -166,6 +178,7 @@
         margin: auto;
         align-items: center;
     }
+
     &__name {
         padding-top: 21px;
         color: #1E1E1E;
