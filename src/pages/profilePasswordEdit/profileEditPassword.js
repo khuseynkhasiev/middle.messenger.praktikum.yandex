@@ -3,5 +3,5 @@ import './profileEditPassword.scss';
 import profileEditPassword from './profileEditPassword.hbs?raw';
 
 export default (props = {}) => {
-    return Handlebars.compile(profileEditPassword)(props)
+    return Handlebars.compile(profileEditPassword)({...props, avatarIcon: props.avatarIcon})
 }
