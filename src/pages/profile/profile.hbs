@@ -1,0 +1,50 @@
+<div class="profile">
+    <div class="profile__container">
+        <div class="profile__back"></div>
+        <div class="profile__main">
+            <div class="prodile__first-info">
+                <div class="profile__avatar">
+                    <img class="profile__img" src="{{avatarIcon}}" alt="Аватарка">
+                </div>
+                <p class="profile__name">Иван</p>
+            </div>
+            <ul class="profile__list">
+                <li class="profile__item">
+                    <label class="profile__label" for="email">Почта</label>
+                    <input class="profile__input" disabled placeholder="pochta@yandex.ru" name="email" id="email"/>
+                </li>
+                <li class="profile__item">
+                    <label class="profile__label" for="login">Логин</label>
+                    <input class="profile__input" disabled placeholder="ivanivanov" name="login" id="login"/>
+                </li>
+                <li class="profile__item">
+                    <label class="profile__label" for="first_name">Имя</label>
+                    <input class="profile__input" disabled placeholder="Иван" name="first_name" id="first_name"/>
+                </li>
+                <li class="profile__item">
+                    <label class="profile__label" for="second_name">Фамилия</label>
+                    <input class="profile__input" disabled placeholder="Иванов" name="second_name" id="second_name"/>
+                </li>
+                <li class="profile__item">
+                    <label class="profile__label" for="display_name">Имя в чате</label>
+                    <input class="profile__input" disabled placeholder="Иван" name="display_name" id="display_name"/>
+                </li>
+                <li class="profile__item">
+                    <label class="profile__label" for="phone">Телефон</label>
+                    <input class="profile__input" disabled placeholder="+7 (909) 967 30 30" name="phone" id="phone"/>
+                </li>
+            </ul>
+            <ul class="profile__action-list">
+                <li class="profile__item">
+                    <a class="profile__link" href="/profile-edit">Изменить данные</a>
+                </li>
+                <li class="profile__item">
+                    <a class="profile__link" href="/profile-edit-password">Изменить пароль</a>
+                </li>
+                <li class="profile__item">
+                    <button class="profile__btn">Выйти</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
